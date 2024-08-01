@@ -4,6 +4,6 @@ fn main() {
     let paths = fs::read_dir("./").unwrap();
 
     for path in paths {
-        println!("{:?}", path.unwrap().file_type());
+        println!("{:?}", path.unwrap());
     }
 }
